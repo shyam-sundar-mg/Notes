@@ -1,0 +1,29 @@
+MODEL EVALUATION
+Experiments:
+(Remember the recipe)
+
+Binary Classification:
+Metrics: Errors and Accuracy (1 - error)
+
+
+Modern Recipe:
+.. Split your data into train and test data set.
+.. Choose model ONLY using train set.
+.. State hypothesis
+.. Test hypothesis using test data.
+
+Never use the test data more than once. Use the train data set alone.
+
+Better recipe
+Data set = Training + Validation + Test data
+
+Initially
+Train on : Training
+Test on : Validation
+
+Finally
+Train on : Training + Validation
+Test on : Test data
+
+Warning: For temporal data, (with time as scale): Be very careful in choosing the test data
+
